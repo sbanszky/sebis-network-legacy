@@ -5,7 +5,7 @@ import PhotoGallery from "@/components/PhotoGallery";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
       <Hero />
       <CareerTimeline />
       <PhotoGallery />

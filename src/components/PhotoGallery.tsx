@@ -33,7 +33,7 @@ const PhotoGallery = () => {
   return (
     <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
           Photo Gallery
         </h2>
 
@@ -41,15 +41,15 @@ const PhotoGallery = () => {
           {photos.map((photo, index) => (
             <div
               key={photo.id}
-              className="group cursor-pointer bg-slate-800/40 rounded-lg overflow-hidden border border-slate-700 hover:border-cyan-400 transition-all duration-300"
+              className="group cursor-pointer bg-gray-900/40 rounded-lg overflow-hidden border border-gray-700 hover:border-orange-500 transition-all duration-300"
               onClick={() => openLightbox(index)}
             >
-              <div className="aspect-square bg-gradient-to-br from-slate-600 via-slate-700 to-slate-800 flex items-center justify-center group-hover:from-slate-500 group-hover:via-slate-600 group-hover:to-slate-700 transition-all duration-300">
+              <div className="aspect-square bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 flex items-center justify-center group-hover:from-gray-600 group-hover:via-gray-700 group-hover:to-gray-800 transition-all duration-300">
                 <div className="text-center p-4">
-                  <div className="w-8 h-8 bg-cyan-400/20 rounded-full flex items-center justify-center mb-2 mx-auto">
-                    <span className="text-cyan-400 text-xs font-bold">{photo.id}</span>
+                  <div className="w-8 h-8 bg-orange-500/20 rounded-full flex items-center justify-center mb-2 mx-auto">
+                    <span className="text-orange-500 text-xs font-bold">{photo.id}</span>
                   </div>
-                  <span className="text-slate-400 text-xs group-hover:text-slate-300 transition-colors">
+                  <span className="text-gray-400 text-xs group-hover:text-gray-300 transition-colors">
                     {photo.filename}
                   </span>
                 </div>
@@ -65,7 +65,7 @@ const PhotoGallery = () => {
               {/* Close button */}
               <button
                 onClick={closeLightbox}
-                className="absolute top-4 right-4 z-10 p-2 bg-slate-800/80 rounded-full hover:bg-slate-700 transition-colors"
+                className="absolute top-4 right-4 z-10 p-2 bg-gray-900/80 rounded-full hover:bg-gray-800 transition-colors"
               >
                 <X className="w-6 h-6 text-white" />
               </button>
@@ -73,30 +73,30 @@ const PhotoGallery = () => {
               {/* Navigation buttons */}
               <button
                 onClick={() => navigateImage('prev')}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-slate-800/80 rounded-full hover:bg-slate-700 transition-colors"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-gray-900/80 rounded-full hover:bg-gray-800 transition-colors"
               >
                 <ChevronLeft className="w-6 h-6 text-white" />
               </button>
 
               <button
                 onClick={() => navigateImage('next')}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-slate-800/80 rounded-full hover:bg-slate-700 transition-colors"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 p-2 bg-gray-900/80 rounded-full hover:bg-gray-800 transition-colors"
               >
                 <ChevronRight className="w-6 h-6 text-white" />
               </button>
 
               {/* Image */}
-              <div className="bg-slate-800 rounded-lg p-8 border border-slate-700">
-                <div className="w-full h-96 bg-gradient-to-br from-slate-600 via-slate-700 to-slate-800 rounded-lg flex items-center justify-center mb-4">
+              <div className="bg-gray-900 rounded-lg p-8 border border-gray-700">
+                <div className="w-full h-96 bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900 rounded-lg flex items-center justify-center mb-4">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-cyan-400/20 rounded-full flex items-center justify-center mb-4 mx-auto">
-                      <span className="text-cyan-400 text-2xl font-bold">{photos[selectedImage].id}</span>
+                    <div className="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                      <span className="text-orange-500 text-2xl font-bold">{photos[selectedImage].id}</span>
                     </div>
                     <h3 className="text-xl font-semibold text-white mb-2">{photos[selectedImage].title}</h3>
-                    <p className="text-slate-400">{photos[selectedImage].filename}</p>
+                    <p className="text-gray-400">{photos[selectedImage].filename}</p>
                   </div>
                 </div>
-                <p className="text-slate-300 text-center">{photos[selectedImage].description}</p>
+                <p className="text-gray-300 text-center">{photos[selectedImage].description}</p>
               </div>
             </div>
           </div>

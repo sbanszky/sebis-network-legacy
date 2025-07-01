@@ -46,7 +46,7 @@ const FolderStructure = () => {
     <section className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
-          Photo Archives
+          Courses
         </h2>
 
         <div className="space-y-4">
@@ -93,7 +93,7 @@ const FolderStructure = () => {
         <div className="mt-12 text-center">
           <div className="bg-gray-900/40 backdrop-blur-lg rounded-2xl p-6 border border-gray-700">
             <p className="text-gray-300">
-              <span className="text-orange-400 font-semibold">Total:</span> {jobFolders.reduce((acc, folder) => acc + folder.photos.length, 0)} photos organized across {jobFolders.length} career milestones
+              <span className="text-orange-400 font-semibold">Total:</span> {jobFolders.reduce((acc, folder) => acc + folder.photos.length, 0)} courses organized across {jobFolders.length} career milestones
             </p>
           </div>
         </div>

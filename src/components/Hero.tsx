@@ -1,4 +1,3 @@
-
 import { Network, Server, Shield } from "lucide-react";
 
 const Hero = () => {
@@ -14,15 +13,15 @@ const Hero = () => {
 
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         <div className="mb-8 flex justify-center space-x-8">
-          <div className="p-4 bg-gray-900/70 rounded-full backdrop-blur-sm border border-gray-700 hover:border-orange-500 transition-all duration-300">
+          <a href="https://www.credly.com/badges/ba1a0da5-339d-473c-b1f8-4a361c21ff37" target="_blank" rel="noopener noreferrer" className="p-4 bg-gray-900/70 rounded-full backdrop-blur-sm border border-gray-700 hover:border-orange-500 transition-all duration-300">
             <Network className="w-8 h-8 text-orange-500" />
-          </div>
-          <div className="p-4 bg-gray-900/70 rounded-full backdrop-blur-sm border border-gray-700 hover:border-orange-500 transition-all duration-300">
+          </a>
+          <a href="https://subnetting.online" target="_blank" rel="noopener noreferrer" className="p-4 bg-gray-900/70 rounded-full backdrop-blur-sm border border-gray-700 hover:border-orange-500 transition-all duration-300">
             <Server className="w-8 h-8 text-orange-500" />
-          </div>
-          <div className="p-4 bg-gray-900/70 rounded-full backdrop-blur-sm border border-gray-700 hover:border-orange-500 transition-all duration-300">
+          </a>
+          <a href="https://www.credly.com/badges/9cbf36b1-602c-4255-9588-925259526527" target="_blank" rel="noopener noreferrer" className="p-4 bg-gray-900/70 rounded-full backdrop-blur-sm border border-gray-700 hover:border-orange-500 transition-all duration-300">
             <Shield className="w-8 h-8 text-orange-500" />
-          </div>
+          </a>
         </div>
 
         <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent mb-6 animate-fade-in">

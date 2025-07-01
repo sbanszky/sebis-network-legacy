@@ -1,4 +1,3 @@
-
 import { GraduationCap, Award, BookOpen, Shield, Cloud, Server } from "lucide-react";
 
 const Courses = () => {
